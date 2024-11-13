@@ -1,43 +1,57 @@
-
 /* navbar */
 
 body {
     background-color: #f7f7f7;
-    font-family: 'Aligarh','sans-serif';
+    font-family: "Aligarh", "sans-serif";
 }
 @font-face {
-    font-family: 'Aligarh';
-    src: local('Aligarh Medium'), local('Aligarh-Medium'),
-        url('./text/Aligarh-Medium/Aligarh-Medium.woff2') format('woff2'),
-        url('./text/Aligarh-Medium/Aligarh-Medium.woff') format('woff'),
-        url('./text/Aligarh-Medium/Aligarh-Medium.ttf') format('truetype');
+    font-family: "Aligarh";
+    src:
+        local("Aligarh Medium"),
+        local("Aligarh-Medium"),
+        url("./text/Aligarh-Medium/Aligarh-Medium.woff2") format("woff2"),
+        url("./text/Aligarh-Medium/Aligarh-Medium.woff") format("woff"),
+        url("./text/Aligarh-Medium/Aligarh-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
 
 * {
-    font-family: 'Aligarh', sans-serif;
+    font-family: "Aligarh", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Aligarh', sans-serif;
+.logo-name {
+    width: auto;
+    height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Aligarh", sans-serif;
 }
 
 li {
-    font-family: 'Aligarh', sans-serif;
+    font-family: "Aligarh", sans-serif;
 }
 
 .navlink {
-    font-family: 'Aligarh', sans-serif;
+    font-family: "Aligarh", sans-serif;
 }
 
 .logo {
-    padding-left: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
 }
 
 #navbarNavDropdown {
     padding-right: 10%;
-
 }
 
 .hover-nav ul {
@@ -46,7 +60,6 @@ li {
     padding: 0;
     overflow: hidden;
 }
-
 
 .hover-nav li {
     float: left;
@@ -67,31 +80,29 @@ li {
     padding-right: 10px;
 }
 
- nav ul li a:after {
-     content: '';
-     width: 0;
-     height: 3px;
-     background: rgb(16, 69, 57);
-     position: absolute;
-     left: 0;
-     bottom: -6px;
-     transition: 0.5s;
- }
+nav ul li a:after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(16, 69, 57);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
 
- nav ul li a:hover::after {
-     width: 100%
- }
-
+nav ul li a:hover::after {
+    width: 100%;
+}
 
 /* carousel */
 .carousel-inner {
     height: 0;
     padding-bottom: 49%;
-    
 }
 
 .carousel-item {
-  position: absolute !important; /* Bootstrap is insistent */
+    position: absolute !important; /* Bootstrap is insistent */
     top: 0;
     right: 0;
     bottom: 0;
@@ -124,7 +135,7 @@ li {
 
 .card {
     width: 100%;
-    max-width: 350px; 
+    max-width: 350px;
     margin: 0 auto 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -170,8 +181,7 @@ li {
         margin-bottom: 92px;
         padding-top: 0px;
     }
-    #carouselExampleIndicators
-    {
-    margin-top: 92px;
+    #carouselExampleIndicators {
+        margin-top: 92px;
     }
 }
